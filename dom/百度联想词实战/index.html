@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>百度搜索联想词实战</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <!-- 搜索框 -->
+        <div class="wrap-search">
+            <input type="text" class="search J_search" />
+        </div>
+        <!-- ul -->
+        <div class="wrap-word">
+            <ul class="list J_list">
+            </ul>
+        </div>
+    </div>
+</body>
+<!-- 模板 -->
+<script type="text/tpl" id="J_ListTpl">
+    <li class="list-item">
+        <a href="https://www.baidu.com/s?wd={{wdLink}}" _target="_blank" class="item-lk">{{wd}}</a>
+    </li>
+</script>
+<script src="js/utils.js" type="text/javascript"></script>
+<script src="js/index.js" type="text/javascript"></script>
+
+</html>
